@@ -124,3 +124,18 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
+@flutterWebHtml
+class _JaypalState extends StatefulWidget {
+  const _JaypalState({super.key});
+
+  @override
+  State<_JaypalState> createState() => __JaypalStateState();
+}
+
+class __JaypalStateState extends State<_JaypalState> {
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
+  }
+}
