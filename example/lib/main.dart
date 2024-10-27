@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:html_generator/annotation.dart';
 
 void main() {
   runApp(const MyApp());
 }
-
+@flutterWebHtml
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
+@flutterWebHtml
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
 

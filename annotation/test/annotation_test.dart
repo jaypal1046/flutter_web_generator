@@ -1,12 +1,18 @@
-import 'package:flutter_test/flutter_test.dart';
 
 import 'package:annotation/annotation.dart';
+import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-  test('adds one to input values', () {
-    final calculator = Calculator();
-    expect(calculator.addOne(2), 3);
-    expect(calculator.addOne(-7), -6);
-    expect(calculator.addOne(0), 1);
+  // Test cases for HtmlGenerator class
+  test('HtmlGenerator test cases', () {
+    // Create a custom HtmlGenerator instance
+    const htmlGenerator = HtmlGenerator(route: '/test', title: 'Test Page');
+    expect(htmlGenerator.route, '/test');
+    expect(htmlGenerator.title, 'Test Page');
+
+    // Test default generator instance
+    const defaultGenerator = flutterWebHtml;
+    expect(defaultGenerator.route, '/');
+    expect(defaultGenerator.title, 'FlutterWeb3');
   });
 }
