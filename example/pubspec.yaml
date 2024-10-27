@@ -30,6 +30,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  html_generator:
+    # git:
+    #   url: https://github.com/yourusername/html_generator.git
+    path: ../annotation  
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -39,6 +43,10 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  build_runner: any
+  generators:
+   path: ../generators
+
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is

@@ -2,6 +2,7 @@ name: generators
 description: "A new Flutter package project."
 version: 0.0.1
 homepage:
+punlish_to: "none"
 
 environment:
   sdk: ^3.5.2
@@ -10,12 +11,19 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  build: any
+  source_gen: any
+  html_generator:
+    # git:
+    #   url: https://github.com/yourusername/html_generator.git
+    path: ../annotation
+
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^4.0.0
-
+  build_runner: any
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 

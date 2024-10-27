@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:html_generator/annotation.dart';
 
 void main() {
   runApp(const MyApp());
 }
-
+@flutterWebHtml
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
+@flutterWebHtml
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
 
@@ -121,5 +122,20 @@ class _MyHomePageState extends State<MyHomePage> {
         child: const Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
+  }
+}
+
+@flutterWebHtml
+class _JaypalState extends StatefulWidget {
+  const _JaypalState({super.key});
+
+  @override
+  State<_JaypalState> createState() => __JaypalStateState();
+}
+
+class __JaypalStateState extends State<_JaypalState> {
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
   }
 }
